@@ -1,24 +1,29 @@
 {
   "inbounds": [
     {
-      "port": 8080,
+      "port": 443,
       "protocol": "vless",
       "settings": {
-        "decryption": "none",
         "clients": [
           {
-            "id": "d34ae15b-8912-48d4-8658-1a6a05c3bc58"
+            "id": "36459fd0-0c89-4733-b20e-067ffc341bd2",
+            "level": 0
           }
-        ]
+        ],
+        "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws"
+        "network": "ws",
+        "wsSettings": {
+          "path": "/IZPHVPN"
+        }
       }
     }
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
+      "protocol": "freedom",
+      "settings": {}
     }
   ]
 }
